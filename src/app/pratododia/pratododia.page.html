@@ -1,0 +1,85 @@
+
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title style="text-align: left; position: absolute; margin-left: 20px; margin-top: 12px;">Prato do Dia </ion-card-title>
+      <div style="text-align: right; position: float;">
+        <ion-button href="home">Voltar</ion-button>
+      </div>
+      <ion-item>
+        <ion-label>DD MM AA</ion-label>
+        <ion-datetime displayFormat="DDDD DD/MMMM/YY" placeholder="Selecione a Data" [(ngModel)]="data" value="data" (ionChange)="procurarprato()"></ion-datetime>
+      </ion-item>
+    </ion-card-header>
+  </ion-card>
+  <div *ngIf="mostrardados">
+    <ion-card>
+      <ion-card-header>
+        <ion-icon style="position: relative;height: 20px;width: 20px;" name="fitness-outline"></ion-icon>
+        <ion-card-title style="text-align: right; position: absolute;">Praticou Exercicios?</ion-card-title>
+        <div style="text-align: right; position: relative;">
+          <ion-toggle [(ngModel)]="arraydePratos[0].exercicio"></ion-toggle>
+        </div>
+        <ion-icon style="position: relative;height: 20px;width: 20px;" name="restaurant-outline"></ion-icon>
+        <ion-card-title style="text-align: left; position: absolute;">Nº de Refeições Livres</ion-card-title>
+        <div style="text-align: right; position: relative;">
+          <ion-input type="number"  value="{{arraydePratos[0].refeicoeslivres}}"></ion-input>
+        </div>
+        <ion-icon style="position: relative;height: 20px;width: 20px;" name="restaurant-outline"></ion-icon>
+        <ion-card-title style="text-align: left; position: absolute;">Peso</ion-card-title>
+        <div style="text-align: right; position: relative;">
+          <ion-input type="number"  value="{{arraydePratos[0].peso}}"></ion-input>
+        </div>
+      </ion-card-header>
+    </ion-card>
+  
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title style="text-align: left; position: absolute; margin-left: 20px; margin-top: 12px;">Café da Manhã</ion-card-title>
+        <div style="text-align: right; position: float;">
+          <ion-button (click)="abrirmodal(arraydePratos[0].cafe, 'Cafe da Manhã')" color="medium">
+            <ion-icon  name="eye-outline"></ion-icon>
+          </ion-button>
+        </div>
+      </ion-card-header>
+    </ion-card>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title style="text-align: left; position: absolute; margin-left: 20px; margin-top: 12px;">Almoço</ion-card-title>
+        <div style="text-align: right; position: float;">
+          <ion-button (click)="abrirmodal(arraydePratos[0].almoco, 'Almoço')" color="medium">
+            <ion-icon name="eye-outline"></ion-icon>
+          </ion-button>
+        </div>
+      </ion-card-header>
+    </ion-card>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title style="text-align: left; position: absolute; margin-left: 20px; margin-top: 12px;">Lanche</ion-card-title>
+        <div style="text-align: right; position: float;">
+          <ion-button (click)="abrirmodal(arraydePratos[0].lanche, 'Lanche')" color="medium">
+            <ion-icon name="eye-outline"></ion-icon>
+          </ion-button>
+        </div>
+      </ion-card-header>
+    </ion-card>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title style="text-align: left; position: absolute; margin-left: 20px; margin-top: 12px;">Jantar</ion-card-title>
+        <div style="text-align: right; position: float;">
+          <ion-button (click)="abrirmodal(arraydePratos[0].jantar, 'Jantar')" color="medium">
+            <ion-icon name="eye-outline"></ion-icon>
+          </ion-button>
+        </div>
+      </ion-card-header>
+    </ion-card>
+  
+  </div>
+  <ion-infinite-scroll threshold="100px" >
+    <!-- <ion-infinite-scroll-content
+      loadingSpinner="bubbles"
+      loadingText="Loading more data...">
+    </ion-infinite-scroll-content> -->
+  </ion-infinite-scroll>
+</ion-content>

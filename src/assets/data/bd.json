@@ -1,0 +1,46 @@
+{
+    "pratododia": [
+        { 
+            "dia": "01/04/2020"  , "exercicio": true  , "peso": 62.20  , "refeicoeslivres": 1  ,
+            "cafe": [], 
+            "almoco": ["Arroz integral","feijão","bife","purê de inhame"],
+            "lanche": ["bolo de banana"],
+            "jantar": ["Rap 10 com queijo e presunto"]
+        },
+        { 
+            "dia": "02/04/2020"  , "exercicio": false  , "peso": 0  , "refeicoeslivres": 0  ,
+            "cafe": ["Tapioca com queijo","café com leite"], 
+            "almoco": ["Arroz integral","feijão","pedaços de frango com batata e cenoura","alface"],
+            "lanche": ["Iogurte com granola"],
+            "jantar": ["Arroz integral","feijão","sobrecoxa","alface"]
+        },
+        { 
+            "dia": "03/04/2020"  , "exercicio": false  , "peso": 0  , "refeicoeslivres": 0  ,
+            "cafe": ["Tapioca com queijo","café com leite"], 
+            "almoco": ["Purê","frango","alface"],
+            "lanche": ["Panqueca de banana"],
+            "jantar": ["Macarrão com calabresa"]
+        },
+        { 
+            "dia": "04/04/2020"  , "exercicio": false  , "peso": 0  , "refeicoeslivres": 0  ,
+            "cafe": ["café com leite","2 Torradas"], 
+            "almoco": ["carne moída com cenoura e repolho roxo","Arroz integral"],
+            "lanche": ["Maçã"],
+            "jantar": ["Japonês"]
+        },
+        { 
+            "dia": "05/04/2020"  , "exercicio": false  , "peso": 0  , "refeicoeslivres": 0  ,
+            "cafe": [], 
+            "almoco": [],
+            "lanche": [],
+            "jantar": []
+        },
+        { 
+            "dia": "06/04/2020"  , "exercicio": false  , "peso": 0  , "refeicoeslivres": 0  ,
+            "cafe": [], 
+            "almoco": [],
+            "lanche": [],
+            "jantar": []
+        }
+    ]
+}

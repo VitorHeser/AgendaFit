@@ -1,0 +1,15 @@
+<ion-card>
+  <ion-card-header>
+    <ion-card-title style="text-align: left; position: absolute; margin-left: 20px; margin-top: 12px;">{{nome}} </ion-card-title>
+    <div style="text-align: right; position: float;">
+      <ion-button (click)="dismiss()" >Voltar</ion-button>
+    </div>
+  </ion-card-header>
+    <ion-list>
+        <ion-item  *ngFor="let f of arrayItems">
+          <ion-label>{{ f }}</ion-label>
+        </ion-item>
+       
+    </ion-list>
+   
+</ion-card>

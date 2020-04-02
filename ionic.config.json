@@ -1,0 +1,7 @@
+{
+  "name": "AgendaFit",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
